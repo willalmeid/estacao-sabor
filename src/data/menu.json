@@ -1,6 +1,6 @@
 [
 	{
-		"image": "../images/dish.png",
+		"image": "/estacao-saber/src/images/dish.png",
 		"title": "Wok de Frango Oriental",
 		"description": "Um delicioso e aromático wok de frango com vegetais frescos e macarrão de arroz, temperado com molho especial asiático. Uma explosão de sabores exóticos em cada garfada.",
 		"rating": 5,
@@ -8,7 +8,7 @@
 		"price": "24,90"
 	},
 	{
-		"image": "../images/dish2.png",
+		"image": "/estacao-saber/src/images/dish2.png",
 		"title": "Tostas de Queijo e Presunto Gourmet",
 		"description": "Duas crocantes tostas artesanais, recheadas com uma combinação irresistível de queijos derretidos e presunto defumado, grelhadas até a perfeição dourada.",
 		"rating": 5,
@@ -16,7 +16,7 @@
 		"price": "18,50"
 	},
 	{
-		"image": "../images/dish3.png",
+		"image": "/estacao-saber/src/images/dish3.png",
 		"title": "Salada Refrescante de Quinoa e Frutas",
 		"description": "Uma leve e vibrante salada de quinoa, mix de folhas frescas, morangos suculentos, fatias de abacate cremoso e um toque de menta, regada com vinagrete cítrico. Ideal para um dia leve.",
 		"rating": 5,
@@ -24,7 +24,7 @@
 		"price": "22,70"
 	},
 	{
-		"image": "../images/dish4.png",
+		"image": "/estacao-saber/src/images/dish4.png",
 		"title": "Camarão Picante ao Alho e Óleo",
 		"description": "Suculentos camarões salteados em azeite de oliva extra virgem com alho crocante, pimenta vermelha e um toque de ervas finas. Um prato saboroso e com um leve toque picante.",
 		"rating": 5,
