@@ -28,7 +28,7 @@ async function loadMenuItems() {
 	if (!dishesContainer) return;
 
 	try {
-		const response = await fetch('../data/menu.json');
+		const response = await fetch('/estacao-sabor/src/data/menu.json');
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
@@ -90,7 +90,7 @@ async function loadTestimonials() {
 	if (!feedbacksContainer) return;
 
 	try {
-		const response = await fetch('../data/testimonials.json');
+		const response = await fetch('/estacao-sabor/src/data/testimonials.json');
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
