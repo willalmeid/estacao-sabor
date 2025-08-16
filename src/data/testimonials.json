@@ -1,0 +1,14 @@
+[
+	{
+		"avatar": "/src/images/avatar.png",
+		"name": "Mariana Silva",
+		"rating": 5,
+		"text": "\"Simplesmente amei! A comida chegou super rápido e estava deliciosa, fresquinha e com um tempero incrível. Pedirei com certeza outras vezes! O Wok de Frango Oriental é o meu novo favorito!\""
+	},
+	{
+		"avatar": "/src/images/avatar2.jpg",
+		"name": "Carlos Oliveira",
+		"rating": 4,
+		"text": "\"As Tostas de Queijo e Presunto são uma delícia, perfeitas para um lanche rápido e saboroso. Só achei que poderia ter um pouco mais de recheio, mas o sabor é excelente e a qualidade dos ingredientes é notável.\""
+	}
+]

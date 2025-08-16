@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estação Sabor</title>
+
+		<!-- Links Externos -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+			integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- Links Internos -->
+		<link rel="stylesheet" href="/src/styles/config.css" />
+		<link rel="stylesheet" href="/src/styles/style.css" />
+		<link rel="stylesheet" href="/src/styles/style-tablet.css" />
+		<link rel="stylesheet" href="/src/styles/style-mobile.css" />
+	</head>
+	<body>
+		<div class="credits">
+			<span>
+				Projeto baseado em
+				<a href="https://www.youtube.com/watch?v=8V3mw1w6h0U&list=PLeNRtRbKp4hKsbc_tY868A-l5WsjU35se&index=3" target="_blank">
+					Larissa Kich
+				</a>
+			</span>
+		</div>
+		<header>
+			<nav id="navbar">
+				<i class="fa-solid fa-burger" id="nav_logo">
+					<span>Estação Sabor</span>
+				</i>
+
+				<ul id="nav_list">
+					<li class="nav-item active"><a href="#home">Início</a></li>
+					<li class="nav-item"><a href="#menu">Cardápio</a></li>
+					<li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+				</ul>
+
+				<button class="btn-default">Peça Aqui</button>
+
+				<button id="mobile-btn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</nav>
+
+			<div id="mobile-menu">
+				<ul id="mobile_nav-list">
+					<li class="nav-item mobile-menu-item"><a href="#home">Início</a></li>
+					<li class="nav-item mobile-menu-item"><a href="#menu">Cardápio</a></li>
+					<li class="nav-item mobile-menu-item"><a href="#testimonials">Avaliações</a></li>
+				</ul>
+
+				<button class="btn-default">Peça Aqui</button>
+			</div>
+		</header>
+
+		<main id="content">
+			<section id="home">
+				<div class="shape"></div>
+				<div id="cta">
+					<h1 id="title">
+						O sabor vai até
+						<span>você</span>.
+					</h1>
+
+					<div class="description">
+						<p>
+							Cansado da rotina? Deixe o <span>sabor</span> e a <span>praticidade</span> chegarem até você! No <span>FOOD</span>, preparamos
+							cada prato com ingredientes frescos e selecionados, transformando sua refeição em uma experiência <span>deliciosa</span> e
+							<span>descomplicada</span>
+						</p>
+
+						<p>
+							Seja para um <span>almoço rápido</span>, um jantar especial ou para manter uma alimentação equilibrada, temos a
+							<span>opção perfeita</span>. Esqueça o trânsito e o trabalho na cozinha: nós cuidamos de tudo para que você desfrute do melhor
+							da nossa culinária no <span>conforto</span> da sua casa ou onde estiver
+						</p>
+					</div>
+
+					<div id="cta_buttons">
+						<a href="" id="menu-button" class="btn-default">
+							Ver cardápio
+							<span class="btn-default">
+								<i class="fas fa-utensils"></i>
+							</span>
+						</a>
+
+						<a href="tel:+557399243486" id="phone-button">
+							Ligue para a gente!
+							<button class="btn-default">
+								<i class="fa-solid fa-phone"></i>
+							</button>
+						</a>
+					</div>
+
+					<div class="social-media-buttons">
+						<a href="">
+							<i class="fa-brands fa-whatsapp"></i>
+						</a>
+						<a href="">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+
+				<div id="banner">
+					<img src="/src/images/hero.png" alt="banner food" />
+				</div>
+			</section>
+
+			<section id="menu">
+				<h2 class="section-title">Cardápio</h2>
+				<h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+				<!-- Construídos Dinamicamente -->
+				<div id="dishes"></div>
+			</section>
+
+			<section id="testimonials">
+				<img src="src/images/chef.png" id="testimonials_chef" alt="imagem do chef" />
+
+				<div id="testimonials_content">
+					<h2 class="section-title">Avaliações</h2>
+					<h3 class="section-subtitle">O que os cliente falam sobre nós</h3>
+
+					<!-- Construídos Dinamicamente -->
+					<div id="feedbacks"></div>
+
+					<button class="btn-default">Ver mais Avaliações</button>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<img src="/src/images/wave.svg" alt="wave footer" />
+
+			<div id="footer_itens">
+				<span id="copyright">
+					&copy 2025
+					<a href="https://github.com/willalmeid" target="_blank">William Almeida</a>
+				</span>
+
+				<div class="social-media-buttons">
+					<a href="">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script src="/src/scripts/scripts.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+</html>

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 720px) {
+	/* -------------------- CONFIG -------------------- */
+	.section-title {
+		font-size: 18px;
+	}
+
+	.section-subtitle {
+		font-size: 36px;
+	}
+
+	/* -------------------- MAIN -------------------- */
+	main {
+		#home {
+			padding-top: 71px;
+
+			#cta {
+				#title {
+					font-size: 36px;
+				}
+
+				.description {
+					font-size: 18px;
+				}
+
+				#cta_buttons {
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+
+		#menu {
+			#dishes {
+				.dish {
+					width: 100%;
+					max-width: 420px;
+				}
+			}
+		}
+
+		#testimonials {
+			#testimonials_content {
+				width: 100%;
+				max-width: 420px;
+
+				#feedbacks {
+					padding: 0;
+
+					.feedback {
+						flex-direction: column;
+
+						.feedback-content {
+							text-align: justify;
+
+							h4 {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								gap: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* -------------------- FOOTER -------------------- */
+	footer {
+		#footer_itens {
+			flex-direction: column-reverse;
+			gap: 20px;
+		}
+	}
+}
