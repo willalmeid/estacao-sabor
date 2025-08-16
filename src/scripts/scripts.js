@@ -28,7 +28,7 @@ async function loadMenuItems() {
 	if (!dishesContainer) return;
 
 	try {
-		const response = await fetch('/src/data/menu.json');
+		const response = await fetch('../data/menu.json');
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
@@ -80,8 +80,7 @@ async function loadMenuItems() {
 		}
 	} catch (error) {
 		console.error('Erro ao carregar os itens do cardápio:', error);
-		dishesContainer.innerHTML =
-			'<p>Não foi possível carregar os itens do cardápio.</p>';
+		dishesContainer.innerHTML = '<p>Não foi possível carregar os itens do cardápio.</p>';
 	}
 }
 
@@ -91,7 +90,7 @@ async function loadTestimonials() {
 	if (!feedbacksContainer) return;
 
 	try {
-		const response = await fetch('/src/data/testimonials.json');
+		const response = await fetch('../data/testimonials.json');
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
@@ -104,9 +103,7 @@ async function loadTestimonials() {
 			feedbackDiv.classList.add('feedback'); // Adiciona a classe 'feedback' para o ScrollReveal
 
 			feedbackDiv.innerHTML = `
-                <img src="${testimonial.avatar}" class="feedback-avatar" alt="${
-				testimonial.name
-			}" />
+                <img src="${testimonial.avatar}" class="feedback-avatar" alt="${testimonial.name}" />
                 <div class="feedback-content">
                     <h4>
                         ${testimonial.name}
@@ -201,9 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			distance: '20%',
 		});
 	} else {
-		console.warn(
-			'A biblioteca ScrollReveal não foi encontrada. As animações não funcionarão.'
-		);
+		console.warn('A biblioteca ScrollReveal não foi encontrada. As animações não funcionarão.');
 	}
 
 	loadMenuItems();
